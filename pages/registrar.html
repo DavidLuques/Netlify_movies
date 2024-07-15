@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/logo.png"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/formulario.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="registro">
+        <h1>Registrarse</h1>
+        <form action="../index.html">
+          <div class="form-registro">
+            <div class="datos">
+              <label for="nombre" class="label-registro">
+                Nombre
+                <input
+                  type="text"
+                  placeholder="Ingresa tu nombre"
+                  name="nombre"
+                  id="nombre"
+                />
+                <h4 id="errorNombre"></h4>
+              </label>
+              <label for="apellido" class="label-registro">
+                Apellido
+                <input
+                  type="text"
+                  placeholder="Ingresa tu apellido"
+                  name="apellido"
+                  id="apellido"
+                />
+                <h4 id="errorApellido"></h4>
+              </label>
+              <label for="email" class="label-registro">
+                E-mail
+                <input
+                  type="email"
+                  placeholder="Ingresa tu email"
+                  name="email"
+                  id="email"
+                />
+                <h4 id="errorEmail"></h4>
+              </label>
+              <label for="usuario" class="label-registro">
+                Nombre de usuario
+                <input
+                  type="text"
+                  placeholder="Nombre de usuario"
+                  name="usuario"
+                  id="usuario"
+                  required
+                />
+                <h4 id="errorUsuario"></h4>
+              </label>
+              <label for="password" class="label-registro">
+                Contraseña
+                <input
+                  type="password"
+                  placeholder="Contraseña"
+                  name="password"
+                  id="password"
+                  required
+                />
+                <h4 id="errorPassword"></h4>
+              </label>
+              <label for="rep-password" class="label-registro">
+                Repetir contraseña
+                <input
+                  type="password"
+                  placeholder="Repetir contraseña"
+                  name="rep-password"
+                  id="rep-password"
+                  required
+                />
+                <h4 id="errorRepetirPassword"></h4>
+              </label>
+            </div>
+
+            <div class="pago">
+              <label for="metodo-pago" class="label-registro"
+                >Método de pago</label
+              >
+              <label for="tarjeta" class="label-registro label-tarjeta">
+                <input
+                  type="radio"
+                  name="metodo-pago"
+                  id="tarjeta"
+                  value="Tarjeta"
+                />
+                Tarjeta de crédito
+                <div class="datos-tarjeta">
+                  <textarea
+                    id="numeroTarjeta"
+                    name="numero"
+                    cols="20"
+                    rows="2"
+                    placeholder="Número de tarjeta"
+                    disabled
+                  ></textarea>
+                  <textarea
+                    id="claveTarjeta"
+                    name="numero"
+                    cols="7"
+                    rows="2"
+                    placeholder="XXX"
+                    disabled
+                  ></textarea>
+                  <h4 id="errorTarjeta"></h4>
+                </div>
+              </label>
+              <label for="cupon" class="label-registro metodo-pago">
+                <input
+                  type="radio"
+                  name="metodo-pago"
+                  id="cupon"
+                  value="Cupón"
+                />
+                Cupón de pago
+              </label>
+              <div class="pagoCheck">
+                <label for="facil" class="label-registro pago-check">
+                  <input
+                    class="pago-check"
+                    type="checkbox"
+                    name="facil"
+                    id="facil"
+                    value="facil"
+                    disabled
+                  />
+                  Pago fácil
+                </label>
+                <label for="rapi" class="label-registro pago-check">
+                  <input
+                    class="pago-check"
+                    type="checkbox"
+                    name="rapi"
+                    id="rapi"
+                    value="rapi"
+                    disabled
+                  />
+                  RapiPago
+                </label>
+                <h4 id="errorCheck"></h4>
+              </div>
+              <label for="transferencia" class="label-registro metodo-pago">
+                <input
+                  type="radio"
+                  name="metodo-pago"
+                  id="transferencia"
+                  value="Transferencia"
+                />
+                Transferencia bancaria
+              </label>
+              <label for="transferencia" class="label-registro metodo-pago cbu" id="cbu"
+                >CBU: 5950493839933</label
+              >
+
+              <div class="registrar">
+                <button
+                  type="submit"
+                  class="btn-registrar confirmar"
+                  id="btn-submit"
+                >
+                  Confirmar
+                </button>
+                <a href="../index.html"
+                  ><input
+                    type="button"
+                    class="btn-registrar cancelar"
+                    value="Ya tengo un usuario"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/funcionesYVariablesComunes.js"></script>
+    <script src="../assets/js/registro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+.inicio,
+.recuperar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.label-inicio,
+.label-recuperar,
+.label-registro {
+  text-align: right;
+}
+
+.pago .label-registro,
+.pago .label-perfil {
+  text-align: left;
+}
+
+.label-inicio input,
+.label-recuperar input,
+.label-registro input,
+.label-perfil input {
+  margin: 0 3em;
+  padding: 0.5em;
+}
+
+.label-inicio,
+.inicio a,
+.label-recuperar,
+.label-registro,
+.label-perfil {
+  display: block;
+}
+
+.label-inicio,
+.label-recuperar,
+.label-registro {
+  margin: 1em auto;
+}
+
+.inicio a {
+  text-align: center;
+  text-decoration: none;
+  color: #0000ff;
+  margin: 0.5em;
+}
+
+.inicio a:hover {
+  text-decoration: underline;
+}
+
+.inicio .ingresar,
+.recuperar .envio,
+.registro .registrar {
+  text-align: center;
+}
+
+.envio {
+  margin-top: 2em;
+}
+
+.registrar,
+.perfil-guardar {
+  margin-top: 4em;
+}
+
+.btn-ingresar {
+  margin: 1em auto;
+  padding: 0.5em 5em;
+}
+
+.btn-recuperar,
+.btn-registrar,
+.btn-guardar {
+  margin: 1em 1em;
+  padding: 0.5em 3em;
+}
+
+.btn-recuperar.enviar,
+.btn-registrar.confirmar,
+.btn-guardar.confirmar {
+  background-color: #66bd668f;
+}
+
+.btn-recuperar.cancelar,
+.btn-registrar.cancelar,
+.btn-guardar.cancelar {
+  background-color: #ff1b1b8e;
+}
+
+.recuperar h1 {
+  text-align: center;
+  margin: 4em 0 1em 0;
+  font-size: 2em;
+}
+
+.registro h1 {
+  margin: 2em 0 1em 0;
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  .registro h1 {
+    margin: 2em 0 1em 2em;
+  }
+}
+
+.formulario-perfil {
+  margin: 0 1em;
+}
+
+.form-registro,
+.form-perfil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-perfil .datos {
+  margin: auto;
+  padding: 0 4em;
+}
+
+.pago-check,
+.label-registro .pago-check {
+  display: inline;
+}
+
+.label-perfil.email {
+  text-align: left;
+}
+
+.label-perfil {
+  margin-top: 1em;
+  text-align: left;
+}
+
+.datos .label-perfil input {
+  display: block;
+  margin-top: 1em;
+  text-align: left;
+  margin-left: 0;
+  width: 250px;
+}
+
+.perfil-guardar {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.perfil-guardar button,
+.perfil-guardar a button {
+  width: 300px;
+}
+
+.perfil .pago {
+  height: 100%;
+  margin: 0 1em;
+}
+
+.perfil .pago input {
+  margin-left: 3em;
+  margin-right: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.datos-tarjeta {
+  margin: 0.5em 4.5em 0 4.5em;
+}
+
+.datos-tarjeta textarea {
+  margin: 0 0.5em;
+  align-items: center;
+}
+
+.pago-check {
+  text-align: center;
+  margin-left: 3em;
+}
+
+.pago-check label {
+  display: inline;
+}
+
+.label-registro.metodo-pago,
+.label-perfil.metodo-pago {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.label-perfil.metodo-pago.cbu {
+  margin-top: 0.1em;
+  margin-left: 5.5em;
+}
+
+.label-registro.metodo-pago.cbu {
+  margin-left: 8em;
+}
+
+#titulo-pago {
+  transform: translateX(80px);
+}
+
+.error {
+  border: 1px solid #ff0000;
+}
+
+.error:focus {
+  outline: none;
+  border: 2px solid #ff0000;
+}
+
+#errorNombre,
+#errorPassword,
+#errorEmail,
+#errorApellido,
+#errorUsuario,
+#errorNuevaPassword,
+#errorRepetirPassword,
+#errorTarjeta,
+#errorCheck {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #ff0000;
+  text-align: center;
+}
+
+.correcto {
+  color: #011708;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,322 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+
+.series-peliculas {
+  padding-bottom: 1em;
+}
+
+.series-peliculas .sermov {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2em 1em;
+  gap: 1em;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    rgb(76, 75, 75) 5%,
+    rgb(251, 254, 255) 100%
+  );
+}
+
+.frame {
+  text-align: center;
+  width: 255px;
+  margin-bottom: 1rem;
+  box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 0.9);
+  background-color: white;
+}
+
+.frame img {
+  height: 300px;
+  width: 230px;
+}
+
+.frame h3 {
+  color: black;
+  text-align: center;
+}
+
+.frame img:hover {
+  border-radius: 50px;
+}
+
+.series-peliculas a {
+  text-decoration: none;
+  color: #000;
+}
+
+.series a:hover,
+.peliculas a:hover {
+  color: #0000ff7c;
+}
+
+.similares {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.slider {
+  overflow: hidden;
+}
+
+.similares img {
+  height: 300px;
+  width: 230px;
+  margin: 20px 50px;
+  text-align: center;
+}
+
+.category {
+  background-color: #ff1c1c;
+  border-radius: 50px;
+  width: 550px;
+  height: 70px;
+  color: white;
+  padding: 15px;
+  margin-left: 14px;
+}
+
+input {
+  font-size: 18px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  background-color: #faebd7;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.foto-perfil {
+  margin: 0 1em;
+  align-content: center;
+}
+
+.foto-perfil img {
+  width: 50%;
+  display: block;
+  border-radius: 50%;
+}
+
+.foto-perfil h3 {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.detalles div,
+.similar {
+  margin: 0.5rem;
+}
+
+.detalles a {
+  color: #000;
+}
+
+.detalles a:visited {
+  color: #000;
+}
+
+.sinopsis {
+  margin-top: 1rem;
+}
+
+.capitulos h3 {
+  display: inline;
+}
+
+.capitulos select {
+  margin-right: 1rem;
+}
+
+.trailer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+iframe {
+  height: 500px;
+  width: 70%;
+  margin: 15px;
+}
+
+.trailer button {
+  background-color: #3d0000;
+  padding: 1rem;
+  color: #ffffff;
+  display: block;
+  font-size: 1.5rem;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+
+.trailer a {
+  text-decoration: none;
+}
+@media screen and (max-width: 575px) {
+  .submenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .category {
+    max-width: 1000px;
+    width: 90%;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  #buscar {
+    margin-top: 10px;
+  }
+  .registro {
+    text-align: center;
+  }
+  .registro h1 {
+    text-align: center;
+    margin: 0;
+  }
+  .inicio,
+  .recuperar,
+  .form-registro .datos {
+    width: 90%;
+  }
+  label.label-inicio,
+  label.label-recuperar,
+  label.label-registro {
+    display: flex;
+  }
+  .frame img:hover {
+    border-radius: 50px;
+  }
+  .similares img {
+    height: 300px;
+    margin: 20px 50px;
+    text-align: center;
+    width: 230px;
+  }
+  .similar h2 {
+    text-align: center;
+  }
+  .label-inicio,
+  .label-recuperar,
+  .datos .label-registro {
+    margin-bottom: 10px; /* Espacio entre cada campo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .label-inicio input,
+  .label-recuperar input,
+  .datos .label-registro input {
+    width: 90%; /* Para ocupar todo el ancho disponible */
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  .perfil .pago-check {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .perfil .pago-check .label-perfil,
+  .registro .pago-check .label-registro {
+    display: block;
+  }
+
+  .registro .pago-check .label-registro {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .registrar {
+    margin: auto;
+  }
+  .btn-registrar {
+    width: 250px;
+  }
+  .registro .pago {
+    overflow: hidden;
+  }
+  .label-registro.label-tarjeta {
+    display: block;
+  }
+}
+
+.similares {
+  display: flex;
+  transition: all 0.5s ease-in;
+  width: 100%;
+}
+
+.similares article {
+  min-width: 100%;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-control.prev {
+  left: 10px;
+  width: 5rem;
+  height: 10rem;
+}
+
+.carousel-control.next {
+  right: 10px;
+  width: 5rem;
+  height: 10rem;
+}
+
+#no-encontradas {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 775px) {
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:  100%;
+  }
+  .category * {
+    margin: 0.1rem auto
+  }
+}
