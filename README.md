@@ -21,7 +21,7 @@ I have developed this project using HTML5, CSS, and Vanilla JS.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/user-attachments/assets/79964587-c230-493a-83a2-90f6782fde6f)
 
 
 ## License
